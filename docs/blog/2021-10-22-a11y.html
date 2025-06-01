@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/screen.css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    </head>
+    <body data-instant-no-mousedown-shortcut>
+        <a class="no-decoration" href="/">
+        <p><strong class="green">root@odj.me:/#</strong>
+        cat /proc/owain/state</p>
+        <strong class="yellow">Mister Owain Daniel Jones</strong><br />
+        Many-Stack Research Software Engineer
+        </a>
+        <div class='hr'></div>
+
+<strong class="orange">Blog</strong> - <a href="/">Home</a> - <a href="/blog">Articles</a><br />
+<span style="float: right">
+    <a href="" onclick="document.getElementById('article').swap(); return false;">Toggle text gradient</a> -
+    <a href="" onclick="toggle_bright_mode(); return false;">Toggle Dark/Light mode</a>
+</span>
+<div class="hr"></div>
+<script type="text/javascript" src="/static/bumbleline.js"></script>
+<div id="article">
+<!--summary-->
+<title>Owain's Blog - 12 Days of ADHD 6: Readability</title>
+<p align="right"><strong class="red">12 Days of ADHD 6: Readability
+</strong><br />
+Friday 22nd October, 2021</p>
+
+<p><em><a href="/blog/2021-10-16-twelve-plus-one-days-of-adhd">October is ADHD
+Awareness Month.</a> I've decided that I'm going to use that as a writing
+prompt, and to set myself a challenge. For the next twelve days, I'm going
+to <a href="/blog/2021-10-17-action-potential">write something</a>
+<a href="/blog/2021-10-18-whoami">about my experiences</a>
+<a href="/blog/2021-10-19-meds">learning about ADHD</a> as a
+<a href="/blog/2021-10-20-haiku">very</a>
+<a href="/blog/2021-10-21-how-did-i-get-here">recently diagnosed</a>
+adult.</em></p>
+
+<p><span class="magenta">After yesterday's mammoth post,</span>
+I thought I'd do a brief one today about
+how I've been thinking about the design of my blog and how it affects the
+readability of long articles like that - and one experiment attempting to
+improve on that.</p>
+
+<!--/summary-->
+
+<p><span class="violet">I have no idea</span>
+if this is an ADHD Thing specifically or an Everyone Thing,
+but I do find it difficult to read long passages of text with a high contrast,
+sometimes. It seems to correlate with how tired, stressed or caffeinated I am.
+But generally, black text on a bright white background, or bright white text
+on a black background creates too much of an after-image for me, which makes
+it quite difficult to scan lines of text.</p>
+
+<p><span class="blue">On bad days</span>
+I even get that effect with paperback books - although generally
+books (and e-ink displays!) fare better than white A4 print-outs, as they tend
+to be off-white. Doing literature reviews for my dissertations was pretty
+painful, but at least academic literature tends to follow the convention of
+having the text split across two columns going down the page. Nonetheless, I
+had to arm myself with every colour of highlighter pen in order to actually
+make it through a paper and take the information in without constantly losing
+my place.</p>
+
+<p><span class="cyan">It intrigues me</span>
+that I have much less trouble reading syntax-highlighted
+code - I'm staring at large chunks of text all the time in my job, but it never
+strains my eyes or hurts my brain nearly as much as reading grayscale articles
+designed for print. Syntax-highlighted code just feels a lot easier to read
+for me.</p>
+
+<p><span class="green">I think</span> there's a few things going on here:</p>
+
+<ul class="long">
+	<li>Syntax highlighting is <em class="yellow">colourful</em>;
+	structure is demarcated
+	using lots of <span class="orange">different</span>,
+	<span class="red">highly-contrasting</span> colours.</li>
+	<li><span class="magenta">(Unless you're a sociopath*)</span>
+	convention is bright coloured text on
+	dark backgrounds - the opposite of print media. Which makes sense when
+	it's a backlit screen. Brightness causes glare and glow, so bright text
+	benefits from looking "fatter", whereas black text gets washed out in
+	the bright glow of its background.</li>
+	<li><span class="violet">Code</span>
+	generally has <em>lots of white-space</em>; different levels of
+	indentation used a lot to show a heierarchy of ideas.</li>
+	<li><span class="blue">Paradoxically,</span> although
+	<a href="https://ux.stackexchange.com/a/48777" target="_new">monospace fonts
+	are supposed to be <em>worse</em> for readability</a>, a
+	<a href="https://github.com/belluzj/fantasque-sans" target="_new">good monospace font</a>
+	tries to remove any ambiguity between similar-looking letters:
+	<strong>1, l, L, i, O, 0</strong>.</li>
+	<li><span class="cyan">Line lengths:</span>
+	I develop predominantly using Python, and I really like
+	PEP-8's
+	<a href="https://www.python.org/dev/peps/pep-0008/#maximum-line-length" target="_new">maximum line length of 79 characters</a>
+	rule. They suggest 72 characters for comment blocks - the parts of code
+	that are intended to be the most human-readable. Minus the left-hand
+	indentation, that's about the same as the rule of
+	<a href="https://baymard.com/blog/line-length-readability" target="_new">50-60 characters per line</a>
+	suggested by typographers.</li>
+</ul>
+
+<p style="font-size:75%"><span class="green">*I obviously have Strong Opinions</span>
+about programming colour schemes here, but I'd be interested to hear if anyone
+genuinely finds dark text on bright background more comfortable and preferable for
+code stuff.</p>
+
+<p><span class="yellow">I gave my homepage</span> that stylistic software-engineer
+hacks-a-lot-in-the-terminal look as a signal to Other Nerds that This Nerd is
+fairly good at Nerding. But inadvertently in the process, I feel like I've also
+made it <strong>easier to read <em>for people like me</em></strong>.</p>
+
+<p><span class="orange">The use of rotating colours</span>
+for headers, unambiguous monospaced font,
+off-white text on a black background, and maximum 60 character width pages
+is a combination I find very easy to read, both on a big screen and on my phone.
+The lines are also essentially doublespaced (line-height: 3ch;), which stops
+characters with dangly bits from interfering with the letters below them
+(I'm sure there's a typographical term for that).</p>
+
+<p><span class="red">One additional</span>
+readability trick I've added to the blog, as you will have
+noticed, is a gradual change in the brightness of the text, going from mid-gray
+to white. This is my attempt at copying
+<a href="https://www.beelinereader.com/" target="_new">BeeLine Reader</a> (or
+the free and open-source implementation
+<a href="https://github.com/corollari/waspline-reader" target="_new">WaspLine Reader</a>),
+which use a gradual change in colour or shade across paragraphs to make it easier
+for you to scan over. The
+<a href="" onclick="document.getElementById('article').swap(); return false">toggle text gradient</a>
+link in the header of this blog switches the effect on and off. You can
+<<<<<<< Updated upstream
+<a href="https://github.com/erinaceous/odj.me/blob/master/static/bumbleline.js" target="_new">steal my implementation</a>
+=======
+<a href="https://github.com/owaindjones/odj.me/blob/master/static/bumbleline.js" target="_new">steal my implementation</a>
+>>>>>>> Stashed changes
+of it if you'd like.</p>
+
+<p><span class="magenta">My homepage</span>
+was never intended to be place in which I'd write long form text
+for a general audience; it's just my digital business card / contact details / CV,
+after all. But now I have a few people reading these posts as I share them - so
+I'd be interested to hear whether I've made it a comfortable reading experience for
+everyone else - or not! Especially the gradually changing text colour. Like, I'd
+like to know whether I'm helping or hindering anyone who'd dyslexic, or has other
+visual processing foibles like the ones I've described for myself. Also, whether
+the font makes things better or worse.</p>
+</div>
+<title>Owain's Blog</title>
+    <script src="/static/instant.page.js" type="module" defer></script>
+    </body>
+</html>
